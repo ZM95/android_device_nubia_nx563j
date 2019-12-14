@@ -86,9 +86,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
 # Properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
-# Ramdisk scripts
-PRODUCT_PACKAGES += \
-    init.nubia.device.rc \
-    init.nubia.touch.lcd.rc
+include $(LOCAL_PATH)/vendor_prop.mk
