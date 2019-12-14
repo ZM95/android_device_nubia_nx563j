@@ -15,7 +15,7 @@
 #
 
 # Inherit from common msm8998-common
--include device/nubia/msm8998-common/BoardConfigCommon.mk
+include device/nubia/msm8998-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/nubia/nx563j
 
