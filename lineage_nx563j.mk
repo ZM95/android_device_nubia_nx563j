@@ -21,6 +21,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Unofficial build ID
 TARGET_UNOFFICIAL_BUILD_ID := beykerykt
+TARGET_UNOFFICIAL_BUILD_ID := zm95
 
 PRODUCT_NAME := lineage_nx563j
 PRODUCT_DEVICE := nx563j
