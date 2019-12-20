@@ -44,8 +44,8 @@ PRODUCT_PACKAGES += \
     camera.msm8998
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
 # Consumerir
 PRODUCT_PACKAGES += \
