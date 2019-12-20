@@ -10,17 +10,6 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 # Audio amplifer TAS2555
 etc/firmware/tas2555_uCDSP.bin:vendor/firmware/tas2555_uCDSP.bin
 
-# Alipay
-vendor/lib/libteeclientjni.so
-vendor/lib64/libteeclientjni.so
--framework/ifaa_fingerprint.jar
-
-# IFAA	
-vendor/lib/vendor.nubia.ifaa@1.0-impl.so
-vendor/lib64/vendor.nubia.ifaa@1.0-impl.so
-lib/vendor.nubia.ifaa@1.0.so:vendor/lib/vendor.nubia.ifaa@1.0.so
-lib64/vendor.nubia.ifaa@1.0.so:vendor/lib64/vendor.nubia.ifaa@1.0.so
-
 # Camera hal
 vendor/lib/hw/camera.msm8998.so
 vendor/lib/libmmcamera_interface.so
@@ -410,14 +399,46 @@ vendor/lib/libchromatix_s5k3p3_postproc.so
 vendor/lib/hw/consumerir.default.so
 vendor/lib64/hw/consumerir.default.so
 
-# Fingerprint sensor
+# Fingerprint -sensor
+lib/com.fingerprints.extension@1.0.so:vendor/lib/com.fingerprints.extension@1.0.so
+lib/vendor.qti.hardware.fingerprint@1.0.so:vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+lib/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
 lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@1.0.so
+lib64/vendor.qti.hardware.fingerprint@1.0.so:vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+lib64/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
+framework/com.fingerprints.extension-V1.0-java.jar:vendor/framework/com.fingerprints.extension-V1.0-java.jar
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+-priv-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
+-vendor/framework/com.fingerprints.extension.jar
 vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
 vendor/bin/qfp-daemon
 vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc
 vendor/framework/com.fingerprints.extension.jar
+vendor/lib/libteeclientjni.so
+vendor/lib/com.fingerprints.extension@1.0_vendor.so
 vendor/lib64/com.fingerprints.extension@1.0_vendor.so
 vendor/lib64/libqfp-service.so
+vendor/lib64/libteeclientjni.so
+
+# Fingerprint -ifaa
+framework/ifaa_fingerprint.jar:vendor/framework/ifaa_fingerprint.jar
+framework/vendor.nubia.ifaa-V1.0-java.jar:vendor/framework/vendor.nubia.ifaa-V1.0-java.jar
+lib/vendor.nubia.ifaa@1.0.so:vendor/lib/vendor.nubia.ifaa@1.0.so
+lib64/vendor.nubia.ifaa@1.0.so:vendor/lib64/vendor.nubia.ifaa@1.0.so
+vendor/lib/vendor.nubia.ifaa@1.0-impl.so:vendor/lib/vendor.nubia.ifaa@1.0-impl.so
+vendor/lib64/vendor.nubia.ifaa@1.0-impl.so:vendor/lib64/vendor.nubia.ifaa@1.0-impl.so
+
+# Fingerprint -soter
+-app/SoterService/SoterService.apk
+framework/vendor.qti.hardware.soter-V1.0-java.jar
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/bin/vendor.qti.hardware.soter@1.0-provision
+lib/vendor.qti.hardware.soter@1.0.so:vendor/lib/vendor.qti.hardware.soter@1.0.so
+lib64/vendor.qti.hardware.soter@1.0.so:vendor/lib64/vendor.qti.hardware.soter@1.0.so
+vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
 # NFC firmware
 etc/libnfc-brcm-20797b00.conf:vendor/etc/libnfc-brcm-20797b00.conf
