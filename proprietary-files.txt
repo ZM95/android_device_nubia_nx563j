@@ -8,6 +8,9 @@ vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Audio amplifer TAS2555
+bin/tas2555-ftc:vendor/bin/tas2555-ftc
+lib/libTAS2555ftc.so:vendor/lib/libTAS2555-ftc.so
+lib64/libTAS2555ftc.so:vendor/lib64/libTAS2555-ftc.so
 etc/firmware/tas2555_uCDSP.bin:vendor/firmware/tas2555_uCDSP.bin
 
 # Camera
